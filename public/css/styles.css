@@ -1,0 +1,71 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  background-color: #eac926;
+}
+
+/*pone en mayuscula la primer letra de algunas palabras*/
+.upper {
+  text-transform: uppercase;
+}
+
+header p {
+  text-align: center;
+}
+
+header img {
+  width: 50%;
+  margin: 20px 0px 0px 20px;
+}
+
+#barra-busqueda {
+  text-align: left;
+  color: #666;
+  margin-left: 20px;
+}
+
+.lupa {
+  background-color: #ebebeb;
+  padding: 3px;
+  border-radius: 3px;
+  margin-left: 20px;
+  border: solid thin #666;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.ofertas {
+  font-size: 16px;
+}
+
+.precios {
+  font-size: 18px;
+}
+
+strong {
+  font-size: 16px;
+}
+
+.burger-menu {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.burger {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #1259c3;
+  color: #ebebeb;
+  border-radius: 5px;
+}
