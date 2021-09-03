@@ -1,47 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  background-color: #eac926;
+  background-color: #ebebeb;
 }
 
-/*pone en mayuscula la primer letra de algunas palabras*/
+/*pone en mayuscula algunas letras*/
 .upper {
   text-transform: uppercase;
 }
 
-header p {
-  text-align: center;
+header {
+  background-color: #eac926;
 }
 
-header img {
-  width: 50%;
-  margin: 20px 0px 0px 20px;
+p {
+  font-size: 12px;
 }
 
-#barra-busqueda {
-  text-align: left;
-  color: #666;
-  margin-left: 20px;
-}
-
-.lupa {
-  background-color: #ebebeb;
-  padding: 3px;
-  border-radius: 3px;
-  margin-left: 20px;
-  border: solid thin #666;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-h2 {
+h3 {
   font-size: 24px;
 }
 
@@ -53,19 +34,63 @@ h2 {
   font-size: 18px;
 }
 
-strong {
+.descripcion {
   font-size: 16px;
 }
 
-.burger-menu {
-  text-align: center;
+.top-header {
+  padding: 10px;
+}
+
+.logo {
+  width: 50%;
   margin-bottom: 20px;
 }
 
-.burger {
+#barra-busqueda {
+  text-align: left;
+  color: #666;
+}
+
+.lupa {
+  background-color: #ebebeb;
+  padding: 3px;
+  border-radius: 3px;
+  border: solid thin #666;
+}
+
+header p {
+  text-align: center;
+}
+
+header ul li {
+  padding: 0;
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.banner img {
+  width: 50%;
+}
+
+.imagen-prod {
+  width: 25%;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
   font-size: 20px;
+  width: 20px;
   padding: 10px;
   background-color: #1259c3;
   color: #ebebeb;
   border-radius: 5px;
+  margin: 10px 0px 20px 0px;
 }

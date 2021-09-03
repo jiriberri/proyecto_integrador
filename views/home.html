@@ -26,23 +26,24 @@
 
   <body>
     <header>
-      <img
-        src="/images/logo-mercado-liebre.svg"
-        alt="Logo Mercadoliebre"
-      />
 
-      <div>
-        <p id="barra-busqueda"><span class="upper">b</span>arra de busqueda</p>
-      </div>
+      <div class="top-header">
+        <div class="logo">
+          <img
+          src="/images/logo-mercado-liebre.svg"
+          alt="Logo Mercadoliebre">
+        </div>
 
-      <div class="lupa-busqueda">
-        <i class="fas fa-search lupa"></i>
-      </div>
+        <div>
+          <p id="barra-busqueda"><span class="upper">b</span>arra de busqueda</p>
+          <i class="fas fa-search lupa"></i>
+        </div>
 
-      <p>
-        <i class="fas fa-hand-holding-usd"></i>
-        <span class="upper">c</span>omprá en cuotas y sin tarjeta de crédito
-      </p>
+        <p>
+          <i class="fas fa-hand-holding-usd"></i>
+          <span class="upper">c</span>omprá en cuotas y sin tarjeta de crédito
+        </p>
+    </div>
 
       <nav>
         <ul>
@@ -50,118 +51,156 @@
           <li><a href="#"><span class="upper">t</span>iendas <span class="upper">o</span>ficiales</a></li>
           <li><a href="#"><span class="upper">v</span>ender</a></li>
           <li><a href="#"><span class="upper">a</span>yuda</a></li>
+        </ul>
 
-          <br />
-
-          <li><a href="#"><span class="upper">c</span>reá tu cuenta</a> <i class="far fa-id-card"></i></li>
-          <li><a href="#"><span class="upper">i</span>ngresá</a> <i class="fas fa-sign-in-alt"></i></li>
+        <br>
+        
+        <ul>
+          <li><a href="/register"><span class="upper">c</span>reá tu cuenta</a> <i class="far fa-id-card"></i></li>
+          <li><a href="/login"><span class="upper">i</span>ngresá</a> <i class="fas fa-sign-in-alt"></i></li>
           <li>
             <a href="#"><span class="upper">m</span>is compras</a> <i class="fas fa-shopping-basket"></i>
           </li>
         </ul>
       </nav>
-
+      
       <div class="burger-menu">
-        <i class="fas fa-bars burger"></i>
+        <i class="fas fa-bars"></i>
       </div>
     </header>
 
     <!--SECCION DE BASADO EN ULTIMA VISITA-->
 
-    <section>
-      <div> <img width="50%" src="/images/img-home-banner.jpg" alt="Banner" /> <div>
+    <section class="banner">
+      <div> <img src="/images/img-home-banner.jpg" alt="Banner" /> <section>
+    </section>
+
+    <main>
+      <section class="ultima-visita">
+          <h3><span class="upper">b</span>asado en tu última visita</h3>
+        
+        <div class="productos">
+          <article>
+            <img
+              src="/images/img-cafetera-moulinex.jpg"
+              alt="Cafetera"
+              class="imagen-prod"
+            />
+
+            <div class="detalle">
+              <p class="precios">$6.770</p>
+              <p class="ofertas">40% <span class="upper">o</span>ff</p>
+              <h4 class="descripcion"><span class="upper">c</span>afetera <span class="upper">m</span>oulinex</h4>
+            </div>
+          </article>
+
+          <div>
+            <img src="/images/img-macbook-pro-2019.jpg"
+            alt="MacBook"
+            class="imagen-prod"
+            />
+
+            <div class="detalle">
+              <p class="precios">$230.000</p>
+              <p class="ofertas">20% <span class="upper">o</span>ff</p>
+              <h4 class="descripcion"><span class="upper">m</span>ac<span class="upper">b</span>ook <span class="upper">p</span>ro 2019</h4>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="/images/img-samsung-galaxy-s10.jpg"
+              alt="Celular samsung"
+              class="imagen-prod"
+            />
+
+            <div class="detalle">
+              <p class="precios">$70.500</p>
+              <p class="ofertas">10% <span class="upper">o</span>ff</p>
+              <h4 class="descripcion"><span class="upper">s</span>amsung <span class="upper">g</span>alaxy <span class="upper">s</span>10</h4>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="/images/img-tv-samsung-smart.jpg"
+              alt="TV smart"
+              class="imagen-prod"
+            />
+
+            <div class="detalle">
+              <p class="precios">$23.200</p>
+              <p class="ofertas">5% <span class="upper">o</span>ff</p>
+              <h4 class="descripcion"><span class="upper">s</span>mart<span class="upper">t</span>v <span class="upper">s</span>amsung 43"</h4>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <br>
       
-        <h2><span class="upper">b</span>asado en tu última visita</h2>
+      <!--SECCION DE OFERTAS-->
 
-      <article>
-        <img
-          width="25%"
-          src="/images/img-cafetera-moulinex.jpg"
-          alt="Cafetera"
-        />
+      <section>
+        <h3><span class="upper">o</span>fertas</h3>
 
-        <p class="precios">$6.770</p>
+        <article>
+          <img
+            src="/images/img-cafetera-moulinex.jpg"
+            alt="Cafetera"
+            class="imagen-prod"
+          />
 
-        <strong><span class="upper">c</span>afetera <span class="upper">m</span>oulinex</strong>
+          <div class="detalle">
+            <p class="precios">$6.770</p>
+            <p class="ofertas">40% <span class="upper">o</span>ff</p>
+            <h4 class="descripcion"><span class="upper">c</span>afetera <span class="upper">m</span>oulinex</h4>
+          </div>
+        </article>
 
-        <p class="ofertas">40% <span class="upper">o</span>ff</p>
-      </article>
+        <article>
+          <img 
+          src="/images/img-macbook-pro-2019.jpg"
+          alt="MacBook"
+          class="imagen-prod"
+          />
 
-      <article>
-        <img width="25%" src="/images/img-macbook-pro-2019.jpg" alt="MacBook" />
-        <p class="precios">$230.000</p>
-        <p class="ofertas">20% <span class="upper">o</span>ff</p>
-        <strong><span class="upper">m</span>ac<span class="upper">b</span>ook <span class="upper">p</span>ro 2019</strong>
-      </article>
+          <div class="detalle">
+            <p class="precios">$230.000</p>
+            <p class="ofertas">20% <span class="upper">o</span>ff</p>
+            <h4 class="descripcion"><span class="upper">m</span>ac<span class="upper">b</span>ook <span class="upper">p</span>ro 2019</h4>
+          </div>
+        </article>
 
-      <article>
-        <img
-          width="25%"
-          src="/images/img-samsung-galaxy-s10.jpg"
-          alt="Celular samsung"
-        />
-        <p class="precios">$70.500</p>
-        <p class="ofertas">10% <span class="upper">o</span>ff</p>
-        <strong><span class="upper">s</span>amsung <span class="upper">g</span>alaxy <span class="upper">s</span>10</strong>
-      </article>
+        <article>
+          <img
+            src="/images/img-samsung-galaxy-s10.jpg"
+            alt="Celular samsung"
+            class="imagen-prod"
+          />
 
-      <article>
-        <img
-          width="25%"
-          src="/images/img-tv-samsung-smart.jpg"
-          alt="TV smart"
-        />
-        <p class="precios">$23.200</p>
-        <p class="ofertas">5% <span class="upper">o</span>ff</p>
-        <strong><span class="upper">s</span>mart<span class="upper">t</span>v <span class="upper">s</span>amsung 43"</strong>
-      </article>
-    </section>
+          <div class="detalle">
+            <p class="precios">$70.500</p>
+            <p class="ofertas">10% <span class="upper">o</span>ff</p>
+            <h4 class="descripcion"><span class="upper">s</span>amsung <span class="upper">g</span>alaxy <span class="upper">s</span>10</h4>
+          </div>
+        </article>
 
+        <article>
+          <img
+            src="/images/img-tv-samsung-smart.jpg"
+            alt="TV smart"
+            class="imagen-prod"
+          />
 
-    <!--SECCION DE OFERTAS-->
-
-    <section>
-      <h2><span class="upper">o</span>fertas</h2>
-
-      <article>
-        <img
-          width="25%"
-          src="/images/img-cafetera-moulinex.jpg"
-          alt="Cafetera"
-        />
-        <p class="precios">$6.770</p>
-        <strong><span class="upper">c</span>afetera <span class="upper">m</span>oulinex</strong>
-        <p class="ofertas">40% <span class="upper">o</span>ff</p>
-      </article>
-
-      <article>
-        <img width="25%" src="/images/img-macbook-pro-2019.jpg" alt="MacBook" />
-        <p class="precios">$230.000</p>
-        <p class="ofertas">20% <span class="upper">o</span>ff</p>
-        <strong><span class="upper">m</span>ac<span class="upper">b</span>ook <span class="upper">p</span>ro 2019</strong>
-      </article>
-
-      <article>
-        <img
-          width="25%"
-          src="/images/img-samsung-galaxy-s10.jpg"
-          alt="Celular samsung"
-        />
-        <p class="precios">$70.500</p>
-        <p class="ofertas">10% <span class="upper">o</span>ff</p>
-        <strong><span class="upper">s</span>amsung <span class="upper">g</span>alaxy <span class="upper">s</span>10</strong>
-      </article>
-
-      <article>
-        <img
-          width="25%"
-          src="/images/img-tv-samsung-smart.jpg"
-          alt="TV smart"
-        />
-        <p class="precios">$23.200</p>
-        <p class="ofertas">5% <span class="upper">o</span>ff</p>
-        <strong><span class="upper">s</span>mart<span class="upper">t</span>v <span class="upper">s</span>amsung 43"</strong>
-      </article>
-    </section>
+          <div class="detalle">
+            <p class="precios">$23.200</p>
+            <p class="ofertas">5% <span class="upper">o</span>ff</p>
+            <h4 class="descripcion"><span class="upper">s</span>mart<span class="upper">t</span>v <span class="upper">s</span>amsung 43"</h4>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
