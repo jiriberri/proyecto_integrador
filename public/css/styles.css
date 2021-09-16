@@ -28,7 +28,7 @@ p {
   padding: 5%;
 }
 
-header div.top-header p{
+header div.top-header p {
   width: 100%;
   text-align: center;
   margin-top: 10px;
@@ -44,7 +44,7 @@ header .form {
   width: 50%;
 }
 
-header .logo{
+header .logo {
   padding: 10px;
 }
 
@@ -103,7 +103,8 @@ section.banner div img {
   width: 100%;
 }
 
-.ultima-visita, .header-ofertas {
+.ultima-visita,
+.header-ofertas {
   display: flex;
   flex-wrap: wrap;
 }
@@ -133,11 +134,12 @@ main {
 }
 
 main section article {
-  background-color: #FFF;
+  background-color: #fff;
   margin: 10px 0px;
+  transition: box-shadow 250ms;
 }
 
-main section article i{
+main section article i {
   display: block;
   font-size: 16px;
   padding: 5px;
@@ -145,11 +147,12 @@ main section article i{
   height: 30px;
   border: 1px solid #39b54a;
   color: #39b54a;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 50%;
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: transform 450ms;
 }
 
 main section h3 {
@@ -172,24 +175,24 @@ main section article .detalle {
   /*el position relative, tengo que ponerlo para que el cambion con absolute, quede bien posicionado*/
 }
 
+article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
 
+article:hover .descripcion {
+  display: block;
+}
 
+article:hover .truck {
+  transform: rotateZ(-90deg);
+}
 
 /*-------------Media queries-------------*/
 
 /*-------------Mobile-------------*/
 
 @media (min-width: 361px) {
-
-  main section article .descripcion{
-    display: block;
-  }
-
-  main section article{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
-
-  main section .productos{
+  main section .productos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -197,16 +200,15 @@ main section article .detalle {
     align-items: center;
   }
 
-  main section .productos article{
+  main section .productos article {
     width: 45%;
   }
 
   .precios,
-  .ofertas{
+  .ofertas {
     width: 50%;
   }
 }
-
 
 /*-------------Tablet-------------*/
 @media (min-width: 769px) {
@@ -240,5 +242,3 @@ main section article .detalle {
     display: none;
   }
 }
-
-
