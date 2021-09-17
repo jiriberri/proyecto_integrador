@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro</title>
+  <title>Login</title>
 
   <!--Importacion de la tipografia Roboto-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +14,7 @@
 
   <!--Importacion de los iconos-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
 </head>
 
 <body>
@@ -61,39 +62,11 @@
   </header>
 
 
-  <form action="/views/register.html" method="POST">
-    <input type="text" name="nombre" placeholder="Nombre y apellido">
+  <form action="/views/login.html">
     <input type="text" name="usuario" placeholder="Nombre de usuario">
-
-    <label for="nacimiento">Fecha de nacimiento</label>
-    <input type="date" name="nacimiento">
-
-    <input type="text" name="domicilio" placeholder="Domicilio">
-
-    <label name="perfil">Perfil de usuario</label>
-    <input type="radio" name="perfil" value="comprador">Comprador
-    <input type="radio" name="perfil" value="vendedor">Vendedor
-
-    <label for="categorias">
-      Categorias de interes:
-    </label>
-    <input type="checkbox" name="categorias" value="electro">Electro
-    <input type="checkbox" name="categorias" value="moda">Moda
-    <input type="checkbox" name="categorias" value="hogar">Hogar
-    <input type="checkbox" name="categorias" value="jugueteria">Jugueteria
-    <input type="checkbox" name="categorias" value="vida-sana">Vida Sana
-
-    <label for="foto">Selecciona foto de usuario:</label>
-    <input type="file" name="foto" accept=".jpg .png">
-
-    <input type="password" name="contraseña">
-    <input type="password" name="conf-contraseña">
-
-    <button type="submit">Enviar</button>
-    <button type="reset">Borrar</button>
+    <input type="password" name="contraseña" placeholder="Contraseña">
+    <a href="/views/login.html"><input type="submit" value="Enviar"></a>
   </form>
-
-
 </body>
 
 </html>
