@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+p {
+  font-size: 12px;
+}
+
+/* ESTILOS DEL HEADER */
+
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+header {
+  background-color: #eac926;
+  padding: 0px 0px 20px;
+}
+
+header .logo,
+header .form {
+  width: 50%;
+}
+
+header .logo {
+  padding: 10px;
+}
+
+header .form {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  font-size: 11px;
+}
+
+header .form .input {
+  background-color: #ffffff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+
+header .form .lupa {
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 3px;
+  border: 1px solid #666;
+}
+
+header div.top-header p {
+  text-align: center;
+}
+
+header nav {
+  font-size: 12px;
+  display: none;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+div.burger-menu {
+  background-color: #1259c3;
+  color: #ebebeb;
+  font-size: 20px;
+  text-align: center;
+  max-width: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px auto auto;
+}
+
+/* ----- TERMINA LOS ESTILOS DEL HEADER  ----- */
+
+body form {
+  width: 75%;
+  margin: 20px auto;
+}
+
+.control-form {
+  margin: 0px 0px 15px;
+}
+
+form .introducir {
+  color: #666;
+  width: 100%;
+  padding: 4px;
+  border: 0px #666;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  background-color: #1259c3;
+  color: #ebebeb;
+  border: 0px;
+  border-radius: 4px;
+}
+
+@media (min-width: 769px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    display: flex;
+  }
+
+  header nav ul li {
+    margin: 0px 8px;
+  }
+
+  .top-header {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  header div.top-header p {
+    margin-top: 0;
+  }
+
+  div.burger-menu {
+    display: none;
+  }
+}

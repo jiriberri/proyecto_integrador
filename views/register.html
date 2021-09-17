@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Registro</title>
+
+  <link rel="stylesheet" href="/css/register-styles.css" />
 
   <!--Importacion de la tipografia Roboto-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,12 +49,9 @@
       <br>
 
       <ul class="nav-right">
-        <li><a href="/views/register.html"><span class="upper">c</span>reá tu cuenta</a> <i class="far fa-id-card"></i>
-        </li>
-        <li><a href="/views/login"><span class="upper">i</span>ngresá</a> <i class="fas fa-sign-in-alt"></i></li>
-        <li>
-          <a href="#"><span class="upper">m</span>is compras</a> <i class="fas fa-shopping-basket"></i>
-        </li>
+        <li><a href="/register"><span class="upper">c</span>reá tu cuenta</a> <i class="far fa-id-card"></i></li>
+          <li><a href="/login"><span class="upper">i</span>ngresá</a> <i class="fas fa-sign-in-alt"></i></li>
+        <li><a href="#"><span class="upper">m</span>is compras</a> <i class="fas fa-shopping-basket"></i></li>
       </ul>
     </nav>
 
@@ -62,38 +62,74 @@
 
 
   <form action="/views/register.html" method="POST">
-    <input type="text" name="nombre" placeholder="Nombre y apellido">
-    <input type="text" name="usuario" placeholder="Nombre de usuario">
+    <div class="control-form">
+      <input type="text" name="nombre" placeholder="Nombre y apellido" class="all-page" required>
+    </div>
+
+    <div class="control-form">
+      <input type="text" name="usuario" placeholder="Nombre de usuario" class="all-page" required>
+    </div>
 
     <label for="nacimiento">Fecha de nacimiento</label>
-    <input type="date" name="nacimiento">
 
-    <input type="text" name="domicilio" placeholder="Domicilio">
+    <div class="control-form">
+      <input type="date" name="nacimiento" class="all-page" required>
+    </div>
+
+    <div class="control-form">
+      <input type="text" name="domicilio" placeholder="Domicilio" class="all-page" required>
+    </div>
 
     <label name="perfil">Perfil de usuario</label>
-    <input type="radio" name="perfil" value="comprador">Comprador
-    <input type="radio" name="perfil" value="vendedor">Vendedor
 
-    <label for="categorias">
-      Categorias de interes:
-    </label>
-    <input type="checkbox" name="categorias" value="electro">Electro
-    <input type="checkbox" name="categorias" value="moda">Moda
-    <input type="checkbox" name="categorias" value="hogar">Hogar
-    <input type="checkbox" name="categorias" value="jugueteria">Jugueteria
-    <input type="checkbox" name="categorias" value="vida-sana">Vida Sana
+    <div class="control-form">
+      <div class="perfil"><input type="radio" name="perfil" value="comprador" class="check" required>Comprador</div>
 
-    <label for="foto">Selecciona foto de usuario:</label>
-    <input type="file" name="foto" accept=".jpg .png">
+      <div class="perfil"><input type="radio" name="perfil" value="vendedor" class="check" required>Vendedor</div>
+    </div>
 
-    <input type="password" name="contraseña">
-    <input type="password" name="conf-contraseña">
+    <div class="control-form">
+      <label for="categorias">Categorias de interes:</label>
+    </div>
 
-    <button type="submit">Enviar</button>
-    <button type="reset">Borrar</button>
+    <div class="control-form">
+      <input type="checkbox" name="categorias" value="electro" class="check">Electro
+    </div>
+
+    <div class="control-form">
+      <input type="checkbox" name="categorias" value="moda" class="check">Moda
+    </div>
+
+    <div class="control-form">
+      <input type="checkbox" name="categorias" value="hogar" class="check">Hogar
+    </div>
+
+    <div class="control-form">
+      <input type="checkbox" name="categorias" value="jugueteria" class="check">Jugueteria
+    </div>
+
+    <div class="control-form">
+      <input type="checkbox" name="categorias" value="vida-sana" class="check">Vida Sana
+    </div>
+
+    <div class="control-form">
+      <label for="foto">Selecciona foto de usuario:</label>  
+      <input type="file" name="foto" accept=".jpg .png" required>
+    </div>
+
+    <div class="control-form">
+      <input type="password" name="contraseña" placeholder="Contraseña" class="all-page" required>
+    </div>
+
+    <div class="control-form">
+      <input type="password" name="conf-contraseña" placeholder="Confirmar contraseña" class="all-page" required>
+    </div>
+
+    <div class="botones">
+      <button type="reset" class="borrar">Borrar</button>
+      <button type="submit" class="enviar">Enviar</button>
+    </div>
   </form>
-
-
 </body>
 
 </html>

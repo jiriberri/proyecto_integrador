@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Login</title>
+
+  <link rel="stylesheet" href="/css/login-styles.css" />
 
   <!--Importacion de la tipografia Roboto-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,12 +50,9 @@
       <br>
 
       <ul class="nav-right">
-        <li><a href="/views/register.html"><span class="upper">c</span>reá tu cuenta</a> <i class="far fa-id-card"></i>
-        </li>
-        <li><a href="/views/login"><span class="upper">i</span>ngresá</a> <i class="fas fa-sign-in-alt"></i></li>
-        <li>
-          <a href="#"><span class="upper">m</span>is compras</a> <i class="fas fa-shopping-basket"></i>
-        </li>
+        <li><a href="/register"><span class="upper">c</span>reá tu cuenta</a> <i class="far fa-id-card"></i></li>
+          <li><a href="/login"><span class="upper">i</span>ngresá</a> <i class="fas fa-sign-in-alt"></i></li>
+        <li><a href="#"><span class="upper">m</span>is compras</a> <i class="fas fa-shopping-basket"></i></li>
       </ul>
     </nav>
 
@@ -62,11 +62,18 @@
   </header>
 
 
-  <form action="/views/login.html">
-    <input type="text" name="usuario" placeholder="Nombre de usuario">
-    <input type="password" name="contraseña" placeholder="Contraseña">
-    <a href="/views/login.html"><input type="submit" value="Enviar"></a>
+  <form action="/views/login.html" method="POST">
+    <div class="control-form">
+      <input type="text" name="usuario" placeholder="Nombre de usuario" class="introducir">
+    </div>
+
+    <div class="control-form">
+      <input type="password" name="contraseña" placeholder="Contraseña" class="introducir">
+    </div>
+
+    <div class="boton">  
+      <button type="submit">Enviar</button>
+    </div>
   </form>
 </body>
-
 </html>
