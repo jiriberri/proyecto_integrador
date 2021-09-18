@@ -49,17 +49,22 @@ header .form {
 }
 
 header .form .input {
-  background-color: #ffffff;
   border: 1px solid #000;
-  outline: none;
+  border-radius: 2px;
   color: #666;
   padding: 2px;
+  width: 80%;
+  margin-right: 3px;
+}
+
+header form button {
+  border: 0px;
 }
 
 header .form .lupa {
   background-color: #ffffff;
   padding: 3px;
-  border-radius: 3px;
+  border-radius: 2px;
   border: 1px solid #666;
 }
 
@@ -111,13 +116,40 @@ form .introducir {
   border-radius: 4px;
 }
 
-button {
+.boton button {
   width: 100%;
   padding: 8px;
   background-color: #1259c3;
   color: #ebebeb;
   border: 0px;
   border-radius: 4px;
+  transition: background-color 250ms;
+}
+
+.boton button:hover {
+  background-color: #0022AA;
+}
+
+/*----- FOOTER -----*/
+footer {
+  margin-top: 10px;
+}
+
+.footer-info {
+  text-align: center;
+  width: 75%;
+  margin: 10px auto;
+}
+
+.footer-icon {
+  font-size: 2em;
+  color: #1259c3;
+  margin: 10px 0px;
+}
+
+.copyright {
+  text-align: left;
+  margin: 10px;
 }
 
 @media (min-width: 769px) {
@@ -139,11 +171,41 @@ button {
     align-items: center;
   }
 
-  header div.top-header p {
-    margin-top: 0;
+  .form {
+    justify-content: center;
   }
 
+  .form .input {
+    width: 80%;
+    margin-right: 3px;
+  }
+
+  header div.top-header p {
+    margin-top: 0;
+    width: 35%;
+  }
   div.burger-menu {
     display: none;
+  }
+}
+
+/*-------------Desktop-------------*/
+@media (min-width: 1280px) {
+  footer .footer-info {
+    display: flex;
+    width: 85%;
+  }
+
+  footer .footer-info p {
+    width: 80%;
+    margin: auto;
+  } 
+
+  footer .footer-icon {
+    transition: color 250ms;
+  }
+
+  footer .footer-icon:hover {
+    color: #ba74e9;
   }
 }
